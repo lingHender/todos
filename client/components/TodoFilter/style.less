@@ -1,0 +1,43 @@
+.todo-filter {
+  padding: 10px;
+  border-top: 1px solid lightgrey;
+  .tab {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 2px 10px;
+    color: grey;
+    cursor: pointer;
+  }
+  .tab--active, .tab:hover, .tab:active {
+    border-radius: 20px;
+    background: lightgrey;
+    color: white;
+    &.tab--all {
+      background: lightskyblue;
+    }
+    &.tab--undo {
+      background: olivedrab;
+    }
+    &.tab--done {
+      background: lightgrey;
+    }
+  }
+  .label {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0px 4px;
+    background: lightgrey;
+    border-radius: 10px;
+    color: white;
+  }
+  .tab--all .label{
+    background: lightskyblue;
+  }
+  .tab--undo .label{
+    background: olivedrab;
+  }
+  .tab--done .label{
+    background: lightgrey;
+  }
+}
+

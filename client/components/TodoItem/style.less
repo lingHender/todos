@@ -1,0 +1,45 @@
+.todo-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgrey;
+  &:first-child {
+    border-top: 1px solid lightgrey;
+  }
+  &:hover {
+    .btn--close, .btn--edit {
+      display: inline-block;
+    }
+  }
+}
+.todo-item--done {
+  text-decoration: line-through;
+}
+.todo-item--editing {
+  .todo-input {
+    padding: 0 !important;
+  }
+  input {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+}
+.btn--check, .btn--close, .btn--edit {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+  .iconfont {
+    font-size: 24px;
+    color: lightgrey;
+  }
+}
+.btn--close {
+  display: none;
+  position: absolute;
+  right: 24px;
+  margin-right: 0;
+}
+.btn--edit {
+  display: none;
+  position: absolute;
+  right: 48px;
+}
